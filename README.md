@@ -12,8 +12,8 @@ This repository contains a Docker setup for running Nginx with custom configurat
 1. Clone the repository:
 
     ```sh
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/christiandesantis/nginx-docker.git nginx
+    cd nginx
     ```
 
 2. Copy the `.env.example` file to `.env` and adjust the variables accordingly:
