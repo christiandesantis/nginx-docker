@@ -3,8 +3,6 @@ services:
     image: nginx:alpine
     container_name: nginx
     env_file: '.env'
-    networks:
-      - nginx-network
     ports:
       - "80:80"
       - "443:443"
@@ -17,7 +15,3 @@ services:
       - ${SSL_CERT}:/etc/ssl/certs/fullchain.pem:ro
       - ${SSL_KEY}:/etc/ssl/private/privkey.pem:ro
     entrypoint: ["sh", "-c", "chmod +x /entrypoint.sh && /entrypoint.sh"]
-
-networks:
-  nginx-network:
-    driver: bridge
