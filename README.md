@@ -25,6 +25,8 @@ This repository contains a Docker setup for running Nginx with custom configurat
     Edit the `.env` file to set the appropriate values for your environment:
 
     ```env
+    DOMAIN_NAME=example.com
+    HOME=/home/your-username
     SSL_CERT=/path/to/your/fullchain.pem
     SSL_KEY=/path/to/your/privkey.pem
     MAIN_DIST=/path/to/your/dist
